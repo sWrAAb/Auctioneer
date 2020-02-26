@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(206, 154, 255);
+    background-color: rgb(214, 222, 243);
     min-height: 100vh;
 }
 
@@ -37,14 +37,19 @@ caption p {
 
 .panel-default {
     border-color: transparent;
-    padding: 0 10px;
+    padding: 10px;
 }
 
 .panel-body {
     height: 100%;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(179, 188, 196);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .product-description {
     min-height: 40px;
 }
+
+
+/*----Navbar----*/
