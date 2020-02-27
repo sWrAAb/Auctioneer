@@ -52,4 +52,9 @@ caption p {
 }
 
 
-/*----Navbar----*/
+/*----Index logo----*/
+
+.index-logo {
+    height: 300px;
+    width: 300px;
+}

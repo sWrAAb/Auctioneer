@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from accounts.views import index, logout, login, registration, user_profile
-from products.views import all_products
+from products.views import all_products, ProductDetailView
 from django.conf.urls.static import static
 
 urlpatterns = [
