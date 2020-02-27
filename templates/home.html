@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="container-fluid home-container">
+    <div class="row">
+        <div class="col home-title text-center">
+            <h1 class="py-4">The Auctioneer</h1>
+            <h3>Auction and Web Shop</h3>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col m-0 p-0">
+            <img class="index-logo pt-4 d-xl-none" src="{% static 'images/online-auctions2.jpg' %}">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col m-0 p-0">
+            <img class="index-logo d-none d-xl-block pt-4" src="{% static 'images/online-auctions.png' %}">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -8,6 +8,10 @@ CATEGORY_CHOICES = (
     ('C','Clothes'),
     ('Fw','Footwear'),
     ('Te','Technology'),
+    ('Ty','Toys'),
+    ('To','Tools'),
+    ('Od','Outdoors'),
+    ('Pe','Pets'),
     ('Ve','Vehicles'),
 )
 

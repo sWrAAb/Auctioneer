@@ -6,8 +6,8 @@ from accounts.forms import UserLoginForm, UserRegistrationForm
 
 
 def index(request):
-    """Return the index.html file"""
-    return render(request, 'index.html')
+    #Return the index html file
+    return render(request, 'home.html')
 
 @login_required
 def logout(request):
