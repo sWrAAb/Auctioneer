@@ -1,4 +1,4 @@
-body {
+.body {
     min-height: 100vh;
 }
 
@@ -15,6 +15,7 @@ h1 {
 
 h2,
 h3,
+h4,
 h5,
 p {
     font-family: 'Roboto', sans-serif;
@@ -73,4 +74,56 @@ caption p {
 
 .index-logo {
     width: 100vw;
+}
+
+.category-product {
+    color: rgb(94, 94, 94);
+}
+
+.btn-success {
+    background-color: #94b659;
+    border: 1px solid #94b659;
+}
+
+
+/* -- Footer -- */
+
+.footer-row {
+    border-top: 1px aliceblue solid;
+    margin-top: 20px;
+}
+
+.footer-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-top: 13px;
+    color: rgb(90, 90, 95);
+}
+
+
+/* Social icons */
+
+.social-icon {
+    margin: 0;
+    height: 30px;
+    padding-top: 15px;
+    color: rgb(90, 90, 95);
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.social-icon:hover {
+    color: orangered;
+    -webkit-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.social-icons-footer {
+    text-align: center;
+}
+
+.icon-bigscreen-alignment {
+    text-align: center;
 }
