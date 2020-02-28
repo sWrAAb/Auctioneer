@@ -1,9 +1,7 @@
-{% extends 'base.html' %} {% load static %} {% load bootstrap_tags %} {% block content %}
+{% extends 'base.html' %} {% load static %} {% load bootstrap_tags %} {% block page_title %}{{user}}'s cart{% endblock %}{% block content %}
 <div class="container">
     <div class="row row-flex">
-        <div class="col text-center mb-3">
-            <h2>{{user}}'s cart</h2>
-        </div>
+
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -38,7 +36,7 @@
         </table>
         <div class="row">
             <div class="col">
-                <p>Total &nbsp &nbsp € {{ total }} &nbsp</p>
+                <p class="ml-3">Total &nbsp &nbsp € {{ total }} &nbsp</p>
                 <div class="col">
                     <a href="{% url 'checkout' %}" class="btn btn-primary" role="button">Checkout</a>
                     <a href="{% url 'products' %}" class="btn btn-outline-primary" role="button">Return</a>

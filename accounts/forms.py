@@ -5,26 +5,29 @@ from django.core.exceptions import ValidationError
 
 
 class UserLoginForm(forms.Form):
-    """Form to be used to log users in"""
+    """Form used to log users in"""
     username = forms.CharField()
     password = forms.CharField(widget=forms.PasswordInput)
+    
 
 
 class UserRegistrationForm(UserCreationForm):
     """Form used to register a new user"""
+    first_name = forms.CharField(max_length=30, help_text='Optional')
+    last_name = forms.CharField(max_length=30, help_text='Optional')
     password1 = forms.CharField(label="Password", widget=forms.PasswordInput)
     password2 = forms.CharField(label="Password Confirmation", widget=forms.PasswordInput)
 
     class Meta:
         model = User
-        fields = ['email', 'username', 'password1', 'password2']
+        fields = ['email', 'username','first_name', 'last_name', 'password1', 'password2']
 
 
     def clean_email(self):
         email = self.cleaned_data.get('email')
         username = self.cleaned_data.get('username')
         if User.objects.filter(email=email).exclude(username=username):
-            raise forms.ValidationError(u'Email adress must be unique')
+            raise forms.ValidationError(u'Email address must be unique')
         return email
 
     def clean_password2(self):

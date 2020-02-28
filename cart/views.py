@@ -35,13 +35,9 @@ def adjust_cart(request, id):
     if quantity > 0:
         cart[id] = quantity
     else:
-        cart.pop(id)
-        messages.error(request, "Yor cart is empty!")
-    
+        cart.pop(id)    
     request.session['cart'] = cart
     return redirect(reverse('view_cart'))
 
 
-        
-     #   messages.error(request, "You need to be logged in to perform that action!")
         
