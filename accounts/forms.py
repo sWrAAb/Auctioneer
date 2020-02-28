@@ -13,8 +13,8 @@ class UserLoginForm(forms.Form):
 
 class UserRegistrationForm(UserCreationForm):
     """Form used to register a new user"""
-    first_name = forms.CharField(max_length=30, help_text='Optional')
-    last_name = forms.CharField(max_length=30, help_text='Optional')
+    first_name = forms.CharField(max_length=30, help_text='Optional', required=False)
+    last_name = forms.CharField(max_length=30, help_text='Optional', required=False)
     password1 = forms.CharField(label="Password", widget=forms.PasswordInput)
     password2 = forms.CharField(label="Password Confirmation", widget=forms.PasswordInput)
 
