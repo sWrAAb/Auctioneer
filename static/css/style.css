@@ -106,6 +106,10 @@ caption p {
     min-height: 40px;
 }
 
+.bidding-page {
+    background-image: url('../images/construction-site.jpg');
+}
+
 
 /*----Index logo----*/
 

@@ -11,7 +11,10 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-import env
+from os import path
+if path.exists("env.py"):
+    import env 
+
 
 from decouple import config
 
@@ -48,6 +51,7 @@ INSTALLED_APPS = [
     'search',
     'checkout',
     'auctions',
+    'bidding',
 ]
 
 MIDDLEWARE = [

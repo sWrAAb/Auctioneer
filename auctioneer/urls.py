@@ -19,6 +19,7 @@ from django.conf import settings
 from accounts.views import index, logout, login, registration, user_profile
 from products.views import all_products, ProductDetailView
 from auctions.views import all_auctions
+from bidding.views import view_bidding
 from django.conf.urls.static import static
 
 urlpatterns = [
@@ -29,7 +30,8 @@ urlpatterns = [
     path('cart/', include('cart.urls')),
     path('search/', include('search.urls')),
     path('checkout/', include('checkout.urls')),
-    path('auctions/', include('auctions.urls'))
+    path('auctions/', include('auctions.urls')),
+    path('bidding/', include('bidding.urls'))
 
 ]
 
