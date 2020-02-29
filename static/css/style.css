@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 body {
     background-image: url('../background/3.jpg');
     background-repeat: no-repeat;
@@ -19,7 +21,10 @@ body {
 }
 
 .row.row-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: 30px;
 }
@@ -58,8 +63,6 @@ p {
 .badge {
     padding-left: 9px;
     padding-right: 9px;
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
     border-radius: 9px;
 }
 
