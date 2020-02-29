@@ -1,10 +1,13 @@
 {% extends 'base.html' %} {% block content %}
-<div class="row text-center mt-4">
-    <div class="col">
-        <h3> Web Shop</h3>
+<div class="container">
+    <div class="row text-center mt-4">
+        <div class="col">
+            <h3> Web Shop</h3>
+            <hr>
+        </div>
     </div>
+    {% include 'components/searchbar.html' %}
 </div>
-{% include 'components/searchbar.html' %}
 <div class="container full-vh">
     <div class="row row-flex">
         {% for product in object_list %}
