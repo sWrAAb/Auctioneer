@@ -374,7 +374,6 @@ All images were taken from google search.
 - Template code was taken from [Bootstrap](https://getbootstrap.com) and [W3Schools](https://www.w3schools.com)
 - CSS code from [CSS Tricks](https://css-tricks.com)
 - Python code from Code Institute lessons
-- Search bar, show total books in navbar and show alternate image when no cover image was added from [RealPython](https://realpython.com)
 
 ### Acknowledgements
 
