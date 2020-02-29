@@ -4,5 +4,4 @@ from auctions.models import Auction
 
 # Create your models here.
 
-class Bidding(models.Model):
-    
+# Comming soon 
