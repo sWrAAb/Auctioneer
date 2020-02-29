@@ -14,6 +14,22 @@ body {
     overflow: hidden;
 }
 
+.full-vh {
+    min-height: 100vh;
+}
+
+.row.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.profile-page {
+    border: 2px rgb(155, 154, 154);
+    border-style: solid;
+    border-radius: 5px;
+}
+
 
 /*----Fonts----*/
 
@@ -32,9 +48,12 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-.full-vh {
-    min-height: 100vh;
+.category-product {
+    color: rgb(94, 94, 94);
 }
+
+
+/*----Product styles----*/
 
 .badge {
     padding-left: 9px;
@@ -71,12 +90,6 @@ caption p {
     word-wrap: break-word;
 }
 
-.row.row-flex {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
 .panel-default {
     border-color: transparent;
     padding: 10px;
@@ -100,17 +113,13 @@ caption p {
     width: 100vw;
 }
 
-.category-product {
-    color: rgb(94, 94, 94);
-}
-
 .btn-success {
     background-color: #94b659;
-    border: 1px solid #94b659;
+    border: 1px solid #4f642b;
 }
 
 
-/* -- Footer -- */
+/*---- Footer----*/
 
 .footer-row {
     border-top: 1px aliceblue solid;
@@ -125,7 +134,7 @@ caption p {
 }
 
 
-/* Social icons */
+/*----Social icons----*/
 
 .social-icon {
     margin: 0;
@@ -150,10 +159,4 @@ caption p {
 
 .icon-bigscreen-alignment {
     text-align: center;
-}
-
-.profile-page {
-    border: 2px rgb(155, 154, 154);
-    border-style: solid;
-    border-radius: 5px;
 }
