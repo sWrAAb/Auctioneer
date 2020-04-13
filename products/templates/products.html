@@ -1,14 +1,15 @@
-{% extends 'base.html' %} {% block content %}
-<div class="container">
+{% extends 'base.html' %} {% block page_title %}Web Shop{% endblock %} {% block content %}
+<!--<div class="container">
     <div class="row text-center mt-4">
         <div class="col">
             <h3> Web Shop</h3>
-            <hr>
+            
         </div>
     </div>
-    {% include 'components/searchbar.html' %}
-</div>
+   
+</div>-->
 <div class="container full-vh">
+    <hr> {% include 'components/searchbar.html' %}
     <div class="row row-flex">
         {% for product in object_list %}
         <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
