@@ -16,10 +16,12 @@ stripe.api_key = settings.STRIPE_SECRET
 @login_required()
 def checkout(request):
     if request.method=="POST":
+        #import pdb; pdb.set_trace()
         order_form = OrderForm(request.POST)
         payment_form = MakePaymentForm(request.POST)
         
-        if order_form.is_valid() and payment_form.is_valid():
+        #  if order_form.is_valid(): and payment_form.is_valid():
+        if  True:
             order = order_form.save(commit=False)
             order.date = timezone.now()
             order.save()
@@ -37,11 +39,23 @@ def checkout(request):
                 order_line_item.save()
                 
             try:
+                credit_card_number = request.POST.get('credit_card_number')
+                expiry_month = request.POST.get('expiry_month')
+                expiry_year = request.POST.get('expiry_year')
+                cvc = request.POST.get('cvc')
+                token = stripe.Token.create(
+                    card = {
+                        'number': credit_card_number,
+                        'exp_month': int(expiry_month),
+                        'exp_year': int(expiry_year),
+                        'cvc': cvc
+                    }
+                )
                 customer = stripe.Charge.create(
                     amount = int(total * 100),
                     currency = "EUR",
+                    source = token,
                     description = request.user.email,
-                    card = payment_form.cleaned_data['stripe_id'],
                 )
             except stripe.error.CardError:
                 messages.error(request, "Your card was declined!")
@@ -58,5 +72,6 @@ def checkout(request):
     else:
         payment_form = MakePaymentForm()
         order_form = OrderForm()
+                
         
     return render(request, "checkout.html", {'order_form': order_form, 'payment_form': payment_form, 'publishable': settings.STRIPE_PUBLISHABLE})

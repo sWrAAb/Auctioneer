@@ -48,18 +48,36 @@ The fully responsive project consists of HTML5 with Django Templates format, CSS
 Databases was stored and retrieved in the backend via sqlite3. Deployment technologies like Heroku and PostgreSQL were used to store Heroku database. 
 AWS3 Bucket was also be used for  for static file storages and Amazon IAM service for security.
 
-"**_As a user, I would like to_**:"
+"**_As a Guest user, I would like to_**:"
 
-- view the website from any device *(mobile, tablet, desktop)*
-- easily navigate through website
-- search for shop for items i want
-- add product the to cart and change quantity at any time
-- view product details
-- view rare artifacts
-- bid online
-- pay with my credit card
-- create my account and view my profile
+- As a Guest, I want to view the website from any device *(mobile, tablet, desktop)*.
+- As a Guest, I want to easily navigate through website.
+- As a Guest, I want to search for shop for items i want.
+- As a Guest, I want to view product details.
+- As a Guest, I want to view rare artifacts.
+- As a Guest, I want to create my password protected account.
 
+"**_As a Registered user, I would like to_**:"
+
+- As a Registered user, I want to login to the site via my registered details.
+- As a Registered user, I want to bid online.
+- As a Registered user, I want to pay with my credit card.
+- As a Registered user, I want to view my profile.
+- As a Registered user, I want to be able to view my Cart and any items I currently have awaiting payment in my Cart.
+- As a Registered user, I want to add product the to cart and change quantity at any time.
+- As a Registered user, I want to have the ability to Logout of the application.
+
+"**_As a Administrator User, I would like to_**:"
+
+- As a Site Administrator, I want to be able to login to an administration panel.
+- As a Site Administrator, I want to have the ability to edit and update site content.
+- As a Site Administrator, I want to ensure any user navigating to my site has a positive User experience between content and responsive design.
+
+"**_As a Developer, I would like to_**:"
+
+- As a Developer, I want to demonstrate my growing abilities as a budding Full Stack Software developer during my time on the CI course.
+- As a Developer, I want a project that I can proudly showcase to potential employers via my Github Repository.
+- As a Developer, I want to create a project that is fully scalable and can be expanded upon as I continue to grow as a developer.
 
 ### Design
 
