@@ -11,7 +11,7 @@ class MakePaymentForm(forms.Form):
     cvc = forms.CharField(label='Security code (CVC)', required=True)
     expiry_month = forms.ChoiceField(label='Month', choices=MONTH_CHOICES, required=True)
     expiry_year = forms.ChoiceField(label='Year', choices=YEAR_CHOICES, required=True)
-    #stripe_id = forms.CharField(widget=forms.HiddenInput)
+    stripe_id = forms.CharField(widget=forms.HiddenInput)
     
 
     def clean(self):
