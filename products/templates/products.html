@@ -4,11 +4,12 @@
     <hr> {% include 'components/searchbar.html' %}
     <div class="row row-flex">
         {% for product in object_list %}
-        <div class="col-4 mt-2 d-flex">
-            <div class="card" style="width:18rem;">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 mb-4 display panel panel-default d-flex">
+            <div class="card" style="width:22rem;">
                 <img class="card-img-top" src="{{ MEDIA_URL }}{{ product.image }}" alt="{{ product.name }}">
                 <div class="card-body flex-fill">
-                    <h4 class="card-title flex-fill">{{ product.name }}</h4>
+                    <h6 class="category-product pl-3 text-center">{{ product.get_category_display }}</h6>
+                    <h5 class="card-title flex-fill">{{ product.name }}</h5>
                     <p class="card-text flex-fill">{{ product.description }}</p>
                     <p class="card-text flex-fill">€{{ product.price }}</p>
                     <form method="post" action="{% url 'add_to_cart' product.id %}">
@@ -23,35 +24,7 @@
                 </div>
             </div>
         </div>
-        <!--         
-        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
-            <div class="panel-body">
-
-                <div class="product-auction mb-1">
-                    <img style="contain" src="{{ MEDIA_URL }}{{ product.image }}" alt="Product">
-                </div>
-
-                <h5 class="category-product pl-3 text-center">{{ product.get_category_display }}</h5>
-
-                <h5 class="pl-3">{{ product.name }}</h5>
-                <p class="product-description pl-3">{{ product.description }}</p>
-
-                <p class="pl-3">€{{ product.price }}</p>
-
-                <form method="post" action="{% url 'add_to_cart' product.id %}">
-                    {% csrf_token %}
-                    <div class="input-group">
-                        <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity" required>
-                        <span class="input-group-btn">
-                            <button class="btn btn-primary" type="submit">Add</button>
-                        </span>
-                    </div>
-                </form>
-            </div>
-        </div> -->
         {% endfor %}
     </div>
 </div>
 {% endblock %}
-
-<!-- style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"-->
