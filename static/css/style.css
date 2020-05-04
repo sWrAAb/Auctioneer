@@ -96,6 +96,10 @@ p {
     min-height: 40px;
 }
 
+.card-body {
+    background: transparent;
+}
+
 .bidding-page {
     background-image: url('../images/construction-site.jpg');
 }
@@ -153,4 +157,46 @@ p {
 
 .icon-bigscreen-alignment {
     text-align: center;
+}
+
+
+/*----Pagination----*/
+
+.pagination {
+    text-align: center;
+    margin-top: 1em;
+    display: block;
+}
+
+.pagination a {
+    text-decoration: none;
+}
+
+.pagination-current,
+.pagination-total {
+    padding: 0.8em 0.8em;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #428bca;
+}
+
+.pagination-total {
+    background-color: #8faeca;
+}
+
+.pagination-action {
+    margin: 0 0.1em;
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    color: #B9B9B9;
+    font-size: 1.3em;
+}
+
+.pagination-of {
+    color: #B9B9B9;
+    padding: 0.8em;
+}
+
+.pagination-action:hover {
+    color: #3354AA;
 }

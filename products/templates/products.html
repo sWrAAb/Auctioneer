@@ -1,13 +1,15 @@
 {% extends 'base.html' %} {% block page_title %}Web Shop{% endblock %} {% block content %}
-
-<div class="pagination">
-
-    {{ products.has_previous }} {{ products.number }} {{ products.paginator.count }} {{ products.paginator.num_pages }} {{ products.paginator.page_range }} {{ products.has_next }}
-
-</div>
-
 <div class="container full-vh">
     <hr> {% include 'components/searchbar.html' %}
+
+    <!----Pagination---->
+
+    <div class="row-flex">
+        {% if products.paginator.num_pages > 1 %} {% include 'pagination.html' with products=products %} {% endif %}
+    </div>
+
+    <!----/Pagination---->
+
     <div class="row row-flex">
         {% for product in products %}
         <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 mb-4 display panel panel-default d-flex">

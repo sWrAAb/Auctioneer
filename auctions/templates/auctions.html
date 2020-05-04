@@ -10,7 +10,9 @@
         {% for auction in object_list %}
         <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
             <div class="panel-body">
-                <div class="product-auction" style="background-image: url('{{ MEDIA_URL }}{{ auction.image }}')"></div>
+                <div class="product-auction">
+                    <img src="{{ MEDIA_URL }}{{ auction.image }}" alt="{{ auction.name }}">
+                </div>
                 <h5 class="ml-3 mt-2">{{ auction.name }}</h5>
                 <p class="product-description pl-3">{{ auction.description }}</p>
                 <hr>
