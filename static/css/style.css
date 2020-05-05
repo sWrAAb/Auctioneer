@@ -8,10 +8,11 @@ body {
     background-position: center center;
     max-width: 100vw;
     overflow-x: hidden;
+    padding-top: 65px;
 }
 
 .home-container {
-    min-height: 100vh;
+    min-height: 100%;
     background-color: white;
     overflow: hidden;
 }
@@ -71,15 +72,6 @@ p {
     background-color: #c67605;
 }
 
-.product {
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-}
-
 .panel-default {
     border-color: transparent;
     padding: 10px;
@@ -94,10 +86,6 @@ p {
 
 .product-description {
     min-height: 40px;
-}
-
-.card-body {
-    background: transparent;
 }
 
 .bidding-page {
