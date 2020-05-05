@@ -11,7 +11,7 @@
         <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
             <div class="panel-body">
                 <div class="product-auction">
-                    <img src="{{ MEDIA_URL }}{{ auction.image }}" alt="{{ auction.name }}">
+                    <img src="{{ MEDIA_URL }}{{ auction.image }}" style="height: 100%; width: 100%; object-fit: contain" alt="{{ auction.name }}">
                 </div>
                 <h5 class="ml-3 mt-2">{{ auction.name }}</h5>
                 <p class="product-description pl-3">{{ auction.description }}</p>
