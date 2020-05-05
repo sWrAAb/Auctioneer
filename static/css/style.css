@@ -1,4 +1,9 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 
 body {
     background-image: url('../background/3.jpg');
@@ -15,6 +20,8 @@ body {
     min-height: 100%;
     background-color: white;
     overflow: hidden;
+    margin-top: -1em;
+    margin-bottom: -1.25em;
 }
 
 .full-vh {
@@ -50,6 +57,7 @@ h3 {
 h2,
 h4,
 h5,
+h6,
 p {
     font-family: 'Roboto', sans-serif;
 }

@@ -16,7 +16,7 @@
                 <div class="product-auction mb-1">
                     <img src="{{ MEDIA_URL }}{{ product.image }}" style="height: 100%; width: 100%; object-fit: contain" alt="{{ product.name }}">
                 </div>
-                <h5 class="category-product pl-3 text-center">{{ product.get_category_display }}</h5>
+                <h6 class="category-product mt-2 text-center">{{ product.get_category_display }}</h6>
                 <h5 class="pl-3">{{ product.name }}</h5>
                 <p class="product-description pl-3">{{ product.description }}</p>
                 <p class="pl-3">€{{ product.price }}</p>
@@ -31,8 +31,6 @@
                 </form>
             </div>
         </div>
-
-
         {% endfor %}
     </div>
 </div>
