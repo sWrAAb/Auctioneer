@@ -53,7 +53,7 @@ $(".darkmode-toggle").click(function() {
     $('.btn-outline-primary').each(function() {
         $(this).toggleClass('dm-btn-outline');
     });
-    $(hr).each(function() {
+    $('.hr').each(function() {
         $(this).toggleClass('hr-dm');
     });
 });
