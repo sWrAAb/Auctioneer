@@ -37,10 +37,11 @@
             <div class="col">
                 <p class="ml-3">Total &nbsp; &nbsp; € {{ total }} &nbsp;</p>
                 <div class="col">
-                    <!-- Hide checkout button if cart is empty -->
+                    <!-- Checkout button if disabled when cart is empty -->
                     {% if total == 0 %}
+                    <a href="{% url 'checkout' %}" class="btn btn-primary checkout-button disabled" role="button">Checkout</a>
                     <a href="{% url 'products' %}" class="btn btn-outline-primary" role="button">Return</a> {% else %}
-                    <a href="{% url 'checkout' %}" class="btn btn-primary checkout-button" role="button">Checkout</a>
+                    <a href="{% url 'checkout' %}" class="btn btn-primary dm-btn checkout-button" role="button">Checkout</a>
                     <a href="{% url 'products' %}" class="btn btn-outline-primary" role="button">Return</a> {% endif %}
                 </div>
             </div>

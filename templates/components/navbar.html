@@ -7,7 +7,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'index' %}">Home</a>
             </li>
-
             <!--available if authenticated-->
             {% if user.is_authenticated %}
             <li class="nav-item">
@@ -40,6 +39,5 @@
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'auctions' %}">Auctions</a>
             </li>
-        </ul>
     </div>
 </nav>

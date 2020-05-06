@@ -35,8 +35,8 @@
     </table>
 
     <div class="row pl-4">
-        <p>Total &nbsp;</p>
-        <p>&nbsp; € {{ total }} &nbsp;</p>
+        <h6>Total &nbsp;</h6>
+        <h6>&nbsp; € {{ total }} &nbsp;</h6>
     </div>
     <div class="row">
         <div class="col m-auto">
@@ -56,7 +56,7 @@
 
                 {% csrf_token %}
                 <div class="form-group col-md-12">
-                    <input class=" btn btn-primary" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
+                    <input class=" btn btn-primary dm-btn" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
                     <a href="{% url 'products' %}" class="btn btn-outline-primary" role="button">Return</a>
                 </div>
             </form>
