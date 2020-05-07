@@ -2,6 +2,7 @@
 <h2 align="center"> Auction and Web Shop</h2>
 
 ## Table of Contents
+
 1. [**UX**](#ux)
     - [**User Stories**](#user-stories)
     - [**Design**](#design)
@@ -21,7 +22,7 @@
 4. [**Testing**](#testing)
     - [**Validators**](#validators)
     - [**Compatibility**](#compatibility)
-    - [**Known Issues**](#known-issues)
+    - [**Dark Mode**](#Dark-Mode)
 
 5. [**Deployment**](#deployment)
     - [**Local Deployment**](#local-deployment)
@@ -37,8 +38,10 @@
 <br>
 
 ## UX
+
 ****
 <br>
+
 The online store you have been waiting for is just few clicks away.
 This project is part of my Code Institute Full Stack Software Development studies. The objective for this milestone project is to create online shop and auction using Django framework. 
 
@@ -75,7 +78,7 @@ AWS3 Bucket was also be used for  for static file storages and Amazon IAM servic
 
 "**_As a Developer, I would like to_**:"
 
-- As a Developer, I want to demonstrate my growing abilities as a budding Full Stack Software developer during my time on the CI course.
+- As a Developer, I want to demonstrate my growing abilities as a Full Stack Software developer during my time on the CI course.
 - As a Developer, I want a project that I can proudly showcase to potential employers via my Github Repository.
 - As a Developer, I want to create a project that is fully scalable and can be expanded upon as I continue to grow as a developer.
 
@@ -95,7 +98,7 @@ The Auctioneer was designed to be simple and presentable with a purpose to sell 
 #### Icons
 
 - [Font Awesome 4.7.0](https://fontawesome.com/) 
-  - I only used icons for social networks.
+  - I only used icons for social networks and angles for pagination.
 
 #### Typography
 
@@ -105,7 +108,7 @@ The Auctioneer was designed to be simple and presentable with a purpose to sell 
 
 ### Wireframes
 
-- For my wireframes, I have used Windows Paint
+- For my wireframes, I have used [Balsamiq](https://balsamiq.com)
 - Images can be viewed in my [Wireframes](https://github.com/sWrAAb/Auctioneer/tree/master/static/wireframes) folder
 
 
@@ -115,47 +118,48 @@ The Auctioneer was designed to be simple and presentable with a purpose to sell 
 
 ### Existing Features
 
+#### **User Account**
 
-**User Account**
 - User can create account or login into existing account which alows him access to all content or log out.
 
-**View All Products**
+#### **View All Products**
+
 - All product can be viewed on products page
 
-**Search Products**
+#### **Search Products**
+
 - Products can be searched via search bar.
 
+#### **Add Product to Cart**
 
+- User can change product quantity inside of cart.
 
-**Add Product to Cart**
-- User can change product quantity inside of cart. 
+#### **Checkout**
 
-**Checkout**
-- User can buy items via credit card. 
+- User can buy items via credit card.
 
+#### **Auction**
 
-**Auction**
 - User can visit auction page.
-
 
 ### Features Left to Implement
 
 Because of lack of time for finishing this project some requirements were not completed.
 
-**Password Reset**
+#### **Password Reset**
+
 - Had some truble translating from Django 1.11 which was used in lesson into 2.2 I used for my project
 
-**Pagination**
-- At this time all products are displayed on a single page. It works now but might take long time to load when more products are added.
+#### **Bids**
 
-**Bids**
 - In the future, ability to bid for items will be added to auction.
 
+#### **Dynamic search bar**
 
-**Dynamic search bar**
 - Toggle buttons for categories will be added and they will display products from selected categories on the products page. 
 
-**Product details**
+#### **Product details**
+
 - I have started to work on the funcionality but had trouble with slugs so I had to give it up for the time being. 
 
 ##### back to [top](#table-of-contents)
@@ -163,6 +167,7 @@ Because of lack of time for finishing this project some requirements were not co
 # Technologies Used
 
 ### Tools
+
 - [Visual Studio Code](https://code.visualstudio.com/) is the IDE used for developing this project. 
 - [Django](https://www.djangoproject.com/) as python web framework for rapid development and clean design.
 - [Stripe](https://stripe.com) as payment platform to validate and accept credit card payments securely.
@@ -177,19 +182,22 @@ Because of lack of time for finishing this project some requirements were not co
 - [PIP](https://pip.pypa.io/en/stable/installing/) for installation of tools needed in this project.
 - [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03) to handle version control.
 - [GitHub](https://github.com/) to store and share all project code remotely. 
+- [Adobe Photoshop](https://www.photoshop.com/en) used to resize images. 
 
 ### Databases
+
 - [PostgreSQL](https://www.postgresql.org/) for production database, provided by heroku.
 - [SQlite3](https://www.sqlite.org/index.html) for development database, provided by django.
 
 ### Libraries
+
 - [JQuery](https://jquery.com) to simplify DOM manipulation.
 - [Bootstrap](https://www.bootstrapcdn.com/) to simplify the structure of the website and make the website responsive easily.
 - [FontAwesome](https://www.bootstrapcdn.com/fontawesome/) to provide social icons for the website.
 - [Google Fonts](https://fonts.google.com/) to style the website fonts.
+- [Dark Mode](https://darkmodejs.learn.uno/) tochange appearance of the website on demand.
 
 ##### back to [top](#table-of-contents)
-
 
 ## Testing
 
@@ -199,36 +207,40 @@ Testing information can be found in separate [testing.md](https://github.com/sWr
 
 ### Validators
 
-**HTML**
-- [W3C HTML Validator](https://validator.w3.org) - Unfortunately the W3C Validator for HTML does not understand the Django templating syntax, so it therefore shows a lot of errors with regards to `{{ variables }}`, `{% for %} {% endfor %}`, etc. Aside from the Jinja warnings and errors, all of the remaining code is perfectly validating. 
+#### **HTML**
 
-**CSS**
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - Did not show any problems
+- [W3C HTML Validator](https://validator.w3.org) - Unfortunately the W3C Validator for HTML does not understand the Django templating syntax, so it therefore shows a lot of errors with regards to `{{ variables }}`, `{% for %} {% endfor %}`, etc. Aside from the Jinja warnings and errors, all of the remaining code is perfectly validating.
 
+#### **CSS**
 
-**JavaScript**
-- [JShint](https://jshint.com/) - 
-    - No major errors
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+  - Did not show any problems
 
-**Python**
+#### **JavaScript**
+
+- [JShint](https://jshint.com/)
+  - No major errors
+
+#### **Python**
+
 - [PEP8 Online](http://pep8online.com/)
-    -No major errors
+  - No major errors
 
 ### Compatibility
 
 To ensure a broad range of users can successfully use this site, I tested it on major browsers in both desktop and mobile configuration.
 
-- Chrome 
-- Edge 
-- Firefox 
-- Opera 
+- Chrome
+- Edge
+- Firefox
+- Opera
 - Internet Explorer
 
 [Autoprefixer](https://autoprefixer.github.io) was used for parsing CSS and adding vendor prefixes.
 
-### Known Issues
+### Dark Mode
 
-- Search bar has stopped working.  
+Dark Mode can be found in separate [darkmode.md](https://github.com/sWrAAb/Auctioneer/blob/master/darkmode.MD) file.
 
 ##### back to [top](#table-of-contents)
 
@@ -238,7 +250,7 @@ To ensure a broad range of users can successfully use this site, I tested it on 
 
 To run this project on your own IDE follow the instructions below:
 
-Ensure you have the following tools: 
+Ensure you have the following tools:
     - An IDE such as [Visual Studio Code](https://code.visualstudio.com/)
 
 The following **must be installed** on your machine:
@@ -253,8 +265,9 @@ To allow you to access all functionality on the site locally, ensure you have cr
 Please click the links above for documentation on how to set these up and retrieve the necessary environment variables.
 
 ### Instructions
+
 1. Save a copy of the github repository located at https://github.com/sWrAAb/Auctioneer by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder. If you have Git installed on your system, you can clone the repository with the following command.
-    ```
+   ```
     git clone https://github.com/sWrAAb/Auctioneer
     ```
 
@@ -329,7 +342,6 @@ _Again this **command may differ depending on your operating system**, please ch
 
 13. Once instances of these items exist in your database your local site will run as expected.
 
-
 ## Heroku Deployment
 
 To deploy The Auctioneer to heroku, take the following steps:
@@ -340,15 +352,15 @@ To deploy The Auctioneer to heroku, take the following steps:
 
 3. `git add` and `git commit` the new requirements and Procfile and then `git push` the project to GitHub.
 
-3. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. Give it a name and set the region to whichever is applicable for your location.
+4. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. Give it a name and set the region to whichever is applicable for your location.
 
-4. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
+5. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
 
-5. Confirm the linking of the heroku app to the correct GitHub repository.
+6. Confirm the linking of the heroku app to the correct GitHub repository.
 
-6. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+7. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
 
-7. Set the following config vars:
+8. Set the following config vars:
 
 | Key | Value |
 --- | ---
@@ -376,12 +388,9 @@ STRIPE_SECRET | `<your secret key>`
 
 12. Once instances of these items exist in your database your heroku site will run as expected.
 
-
 ## Credits
 
-
 ### Media
-
 
 #### Images
 
