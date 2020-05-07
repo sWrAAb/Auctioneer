@@ -203,7 +203,7 @@ Because of lack of time for finishing this project some requirements were not co
 
 ****
 
-Testing information can be found in separate [testing.md](https://github.com/sWrAAb/Auctioneer/blob/master/testing.MD) file.
+Testing information can be found in separate [testing.md](https://github.com/sWrAAb/Auctioneer/blob/master/testing.md) file.
 
 ### Validators
 
