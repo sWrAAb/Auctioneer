@@ -1,6 +1,6 @@
 # Dark Mode
 
-Readme file](https://github.com/sWrAAb/Auctioneer/blob/master/README.md)
+[Readme file](https://github.com/sWrAAb/Auctioneer/blob/master/README.md)
 
 To change appearance on click I used [Darkmode.js](https://darkmodejs.learn.uno/) library.
 

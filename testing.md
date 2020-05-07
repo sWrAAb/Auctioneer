@@ -2,16 +2,6 @@ Readme file](https://github.com/sWrAAb/Auctioneer/blob/master/README.md)
 
 [Heroku Live - The Auctioneer](https://the-auctioneer.herokuapp.com)
 
-### Python testing
-
-Some of the functions were tested using unittest.
-Because of testing complexity and lack of time only 5 functions were tested.
-
-
-#### Testing instructions
-
-To run tests use command:  python manage.py test
-
 ## UX Testing
 
 - To easily find what I am looking for, I want the layout of the site to make sense so I am not confused or put off using it.
