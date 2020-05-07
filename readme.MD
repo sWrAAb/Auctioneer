@@ -240,7 +240,7 @@ To ensure a broad range of users can successfully use this site, I tested it on 
 
 ### Dark Mode
 
-Dark Mode can be found in separate [darkmode.md](https://github.com/sWrAAb/Auctioneer/blob/master/darkmode.MD) file.
+Dark Mode can be found in separate [darkmode.md](https://github.com/sWrAAb/Auctioneer/blob/master/darkmode.md) file.
 
 ##### back to [top](#table-of-contents)
 

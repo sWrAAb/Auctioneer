@@ -1,6 +1,6 @@
 Readme file](https://github.com/sWrAAb/Auctioneer/blob/master/README.md)
 
-[Heroku Live - The Lost Page](https://the-auctioneer.herokuapp.com)
+[Heroku Live - The Auctioneer](https://the-auctioneer.herokuapp.com)
 
 ### Python testing
 
